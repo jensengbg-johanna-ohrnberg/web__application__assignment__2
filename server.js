@@ -42,6 +42,7 @@ app.get('/', (request, response) => {
     response.send(products);
 
 });
+
 /*
 // Söker efter en produkt HAR EJ MED I INLÄMNINGEN
 app.get('/api/products/:id', (request, response) => {
@@ -59,6 +60,7 @@ app.get('/api/products/:id', (request, response) => {
     };
 });
 */
+
 // Lägger till produkter i varukorgen
 app.post('/api/cart', (request, response) => {
 
