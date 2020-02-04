@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*Produktlistan*/
+
+.img__cart {
+  grid-column: 5 / 6;
+  grid-row: 1 / 1;
+}
+
+#img__c {
+  max-width: 10%;
+  max-height: auto;
+  margin-left: 50%;
+  margin-top: 7%;
+}
+
+.products {
+  grid-column: 3 / 4;
+  grid-row: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.cleats {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.img__cleats {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.ball {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.img__ball {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.goaliegloves {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.img__goaliegloves {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.spandex {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+}
+
+.img__spandex {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.socks {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.img__socks {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.hockeystick {
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+}
+
+.img__hockeystick {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.skateboard {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
+
+.img__skateboard {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.inlines {
+  grid-column: 4 / 5;
+  grid-row: 5 / 6;
+}
+
+.img__inlines {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.helmet {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+}
+
+.img__helmet {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.bicycle {
+  grid-column: 4 / 5;
+  grid-row: 6 / 7;
+}
+
+.img__bicycle {
+  max-width: 100%;
+  max-height: auto;
+}
+
+/*Varukorgen*/
+
+.img__arrow {
+  grid-column: 1 / 2 ;
+  grid-row: 1 / 1;
+}
+
+#img__a {
+  max-width: 10%;
+  max-height: auto;
+  margin-left: 45%;
+  margin-top: 13%;
+}
+
+.title__cart {
+  grid-column: 3 / 4;
+  grid-row: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}

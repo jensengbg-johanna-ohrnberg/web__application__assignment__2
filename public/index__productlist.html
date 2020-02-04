@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/public/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <title>Web application - assignment 2</title>
+    </head>
+
+    <!--<header>
+        <img class="img__cart" src="https://image.flaticon.com/icons/svg/1170/1170678.svg" alt="cart">
+        <h1 class="title__productlist">Sportshoppen</h1>
+        <h6 class="undertext__productlist">Den här internetshopen säljer allt möjligt inom träning, sport och hälsa!</h6>
+    </header>-->
+
+    <body>
+
+        <h2 class="products">Produkter:</h2>
+        <a class="img__cart" href="/public/index__cart.html">
+            <img id="img__c" src="https://image.flaticon.com/icons/svg/1170/1170678.svg" alt="cart">
+        </a>
+
+        <section class="cleats">
+            <h3>Fotbollsskor</h3>
+            <h5>Pris: 2.899 kr</h5>
+            <img class="img__cleats" src="https://images.unsplash.com/photo-1511426463457-0571e247d816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Cleats">
+            <button id="cleats__btn" type="button">Köp</button>
+        </section>
+
+        <section class="ball">
+            <h3>Fotboll</h3>
+            <h5>Pris: 199 kr</h5>
+            <img class="img__ball" src="https://images.unsplash.com/photo-1516567727245-ad8c68f3ec93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Ball">
+            <button id="ball__btn" type="button">Köp</button>
+        </section>
+
+        <section class="goaliegloves">
+            <h3>Målvaktshandskar</h3>
+            <h5>Pris: 299 kr</h5>
+            <img class="img__goaliegloves" src="https://images.unsplash.com/photo-1516115928206-880b8c879d22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Goaliegloves">
+            <button id="goaliegloves__btn" type="button">Köp</button>
+        </section>
+
+        <section class="spandex">
+            <h3>Värmebyxor</h3>
+            <h5>Pris: 299 kr</h5>
+            <img class="img__spandex" src="https://images.unsplash.com/photo-1545921142-325d5ae5f790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Spandex">
+            <button id="spandex__btn" type="button">Köp</button>
+        </section>
+
+        <section class="socks">
+            <h3>Träningsstrumpor</h3>
+            <h5>Pris: 159 kr</h5>
+            <img class="img__socks" src="https://images.unsplash.com/photo-1563232490-bf837d8792fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Socks">
+            <button id="socks__btn" type="button">Köp</button>
+        </section>
+
+        <section class="hockeystick">
+            <h3>Hockeyklubba</h3>
+            <h5>Pris: 2.999 kr</h5>
+            <img class="img__hockeystick" src="https://images.unsplash.com/photo-1558087333-5953f5994102?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Hockeystick">
+            <button id="hockeystick__btn" type="button">Köp</button>
+        </section>
+
+        <section class="skateboard">
+            <h3>Skateboard</h3>
+            <h5>Pris: 699 kr</h5>
+            <img class="img__skateboard" src="https://images.unsplash.com/photo-1547447134-cd3f5c716030?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Skateboard">
+            <button id="skateboard__btn" type="button">Köp</button>
+        </section>
+
+        <section class="inlines">
+            <h3>Inlines</h3>
+            <h5>Pris: 699 kr</h5>
+            <img class="img__inlines" src="https://images.unsplash.com/photo-1501782223170-a04fc18cba9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Inlines">
+            <button id="inlines__btn" type="button">Köp</button>
+        </section>
+
+        <section class="helmet">
+            <h3>Cykelhjälm</h3>
+            <h5>Pris: 499 kr</h5>
+            <img class="img__helmet" src="https://images.unsplash.com/photo-1545058803-7138682b521a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Helmet">
+            <button id="helmet__btn" type="button">Köp</button>
+        </section>
+
+        <section class="bicycle">
+            <h3>Cykel</h3>
+            <h5>Pris: 3.999 kr</h5>
+            <img class="img__bicycle" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Bicycle">
+            <button id="bicycle__btn" type="button">Köp</button>
+        </section>
+        
+        <script src="/public/js/index__productlist.js"></script>
+    </body>
+</html>
