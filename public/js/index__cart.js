@@ -1,5 +1,3 @@
-const cart = document.getElementById('img__c');
-
 // Hämtar varukorg
 const getCart = () => {
     fetch('http://localhost:8000/api/cart', {
@@ -8,7 +6,7 @@ const getCart = () => {
         return response.json();
     }).then((data) => {
         console.log(data);
-    })
-}
+    });
+};
 
 getCart();

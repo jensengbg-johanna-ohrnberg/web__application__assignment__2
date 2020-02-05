@@ -1,153 +1,242 @@
-* {
-  box-sizing: border-box;
+/*
+
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
 
-body {
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: #777;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+/*body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(8, 1fr);
   grid-gap: 10px;
   width: 100vw;
   height: 100vh;
-}
+}*/
 
 /*Produktlistan*/
-
-.img__cart {
-  grid-column: 5 / 6;
-  grid-row: 1 / 1;
-}
 
 #img__c {
   max-width: 10%;
   max-height: auto;
-  margin-left: 50%;
+  margin-left: 100%;
   margin-top: 7%;
 }
 
+.section-header {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
 .products {
-  grid-column: 3 / 4;
-  grid-row: 1 / 1;
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
 }
 
-h3 {
-  font-family: 'Roboto', sans-serif;
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em .67em;
+  cursor: pointer;
 }
 
-h5 {
-  font-family: 'Roboto', sans-serif;
+.btn {
+  color: white;
+  background-color: #56CCF2;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
 }
 
-.cleats {
+.btn:hover {
+  background-color: #2D9CDB;
+}
+
+/*.cleats {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}*/
+
+.shop-item {
+  margin: 30px;
 }
 
-.img__cleats {
+/*.img__cleats {
   max-width: 100%;
   max-height: auto;
-}
+}*/
 
-.ball {
+/*.ball {
   grid-column: 4 / 5;
   grid-row: 2 / 3;
-}
+}*/
 
-.img__ball {
+/*.img__ball {
   max-width: 100%;
   max-height: auto;
-}
+}*/
 
-.goaliegloves {
+/*.goaliegloves {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-}
+}*/
 
-.img__goaliegloves {
+/*.img__goaliegloves {
   max-width: 100%;
   max-height: auto;
-}
+}*/
 
-.spandex {
+/*.tape10pc {
   grid-column: 4 / 5;
   grid-row: 3 / 4;
-}
+}*/
 
-.img__spandex {
+/*.img__tape10pc {
   max-width: 100%;
   max-height: auto;
-}
+}*/
 
-.socks {
+/*.socks {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
-}
+}*/
 
-.img__socks {
+/*.img__socks {
   max-width: 100%;
   max-height: auto;
-}
+}*/
 
-.hockeystick {
+/*.hockeystick {
   grid-column: 4 / 5;
   grid-row: 4 / 5;
-}
+}*/
 
-.img__hockeystick {
+/*.img__hockeystick {
   max-width: 100%;
   max-height: auto;
-}
+}*/
 
-.skateboard {
+/*.shinguards {
   grid-column: 2 / 3;
   grid-row: 5 / 6;
-}
+}*/
 
-.img__skateboard {
+/*.img__shinguards {
   max-width: 100%;
   max-height: auto;
-}
+}*/
 
-.inlines {
+/*.skates {
   grid-column: 4 / 5;
   grid-row: 5 / 6;
-}
+}*/
 
-.img__inlines {
+/*.img__skates {
   max-width: 100%;
   max-height: auto;
-}
+}*/
 
-.helmet {
+/*.helmet {
   grid-column: 2 / 3;
   grid-row: 6 / 7;
-}
+}*/
 
-.img__helmet {
+/*.img__helmet {
   max-width: 100%;
   max-height: auto;
-}
+}*/
 
-.bicycle {
+/*.shoulderProtection {
   grid-column: 4 / 5;
   grid-row: 6 / 7;
-}
+}*/
 
-.img__bicycle {
+/*.img__shoulderProtection {
   max-width: 100%;
   max-height: auto;
+}*/
+
+.name {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.img {
+  height: 250px;
+}
+
+.price {
+  flex-grow: 1;
+  color: #333;
+}
+
+.shop-items {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
 
 /*Varukorgen*/
-
-.img__arrow {
-  grid-column: 1 / 2 ;
-  grid-row: 1 / 1;
-}
 
 #img__a {
   max-width: 10%;
@@ -157,10 +246,111 @@ h5 {
 }
 
 .title__cart {
-  grid-column: 3 / 4;
-  grid-row: 1 / 1;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-name {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.img__cart {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.remove__btn {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.remove__btn:hover {
+  background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row {
+  border-bottom: 1px solid black;
+}
+
+.cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.purschaseBtn {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
 }

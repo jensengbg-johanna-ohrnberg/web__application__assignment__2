@@ -7,20 +7,36 @@
         <title>Web application - assignment 2</title>
     </head>
 
-    <!--<header>
-        <h1>Cart!</h1>
-    </header>-->
-
     <body>
-
-        <h2 class="title__cart">Varukorg:</h2>
         <a class="img__arrow" href="/public/index__productlist.html">
             <img id="img__a" src="https://image.flaticon.com/icons/svg/467/467272.svg" alt="cart">
         </a>
 
-        <section id="product__output"></section>
-
-        <script src="/public/js/index__productlist.js"></script>        
+        <section class="container-cart">
+            <h2 class="title__cart">Varukorg:</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Produkt</span>
+                <span class="cart-price cart-header cart-column">Pris</span>
+                <span class="cart-quantity cart-header cart-column">Antal</span>
+            </div>
+            
+                <div class="cart-item">
+                    <img class="img__cart" src="https://images.unsplash.com/photo-1511426463457-0571e247d816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                    <span class="cart-name">Fotbollsskor</span>
+                </div>
+                <span class="cart-price">$289 kr</span>
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="remove__btn" type="button">Ta bort</button>
+            
+            
+                <strong class="cart-total-title">Totalt</strong>
+                <span class="cart-total-price">$289 kr</span>
+            
+            <button class="purchaseBtn" type="button">Köp</button>
+        </section>
+        
+        <script src="/public/js/index__cart.js"></script>
+        <script src="/public/js/addRemove.js"></script>       
     </body>
 
 </html>
