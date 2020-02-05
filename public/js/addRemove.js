@@ -22,6 +22,17 @@ function ready() {
        button.addEventListener('click', addToCartClicked) 
     }
 
+    document.getElementsByClassName('purchaseBtn')[0].addEventListener('click', purchaseClicked)
+
+    function purchaseClicked() {
+        alert('Tack för köpet!')
+        var cartItems = document.getElementsByClassName('cart-items')[0]
+        while (cartItems.hasChildNodes()) {
+            cartItems.removeChild(cartItems.firstChild)
+        }
+        updateCartTotal()
+    }
+
 function removeCartItem(event) {
     var buttonClicked = event.target
             buttonClicked.parentElement.parentElement.remove();
@@ -43,10 +54,33 @@ function addToCartClicked(event) {
     var price = shopItem.getElementsByClassName('price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('img')[0].src
     addItemToCart(title, price, imageSrc)
+    updateCartTotal()
 }
 
 function addItemToCart(title, price, image) {
     var cartRow = document.createElement('div')
+    CartRow.classlist.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = cartItems.getElementsByClassName('cart-name')
+    for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i] == title) {
+            alert('Den här produkten är redan tillagd.')
+            return
+        }
+    }
+    var cartRowContents = `
+    <div class="cart-item">
+    <img class="img__cart" src="${imageSrc}">
+    <span class="cart-name">${title}</span>
+</div>
+<span class="cart-price">${price}</span>
+<input class="cart-quantity-input" type="number" value="1">
+<button class="remove__btn" type="button">Ta bort</button>
+</div>`
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('remove__btn')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
 
 function updateCartTotal() {

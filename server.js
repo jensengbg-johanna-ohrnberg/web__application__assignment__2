@@ -31,7 +31,7 @@ const initiateDatabase = () => {
         { id: 6, name: 'goaliegloves', price: 299, image: 'https://images.unsplash.com/photo-1516115928206-880b8c879d22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
         { id: 7, name: 'helmet',price: 499, image: 'https://images.unsplash.com/photo-1545058803-7138682b521a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
         { id: 8, name: 'shoulderProtection', price: 1599, image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 9, name: 'tape10pc', price: 399, image: 'https://images.unsplash.com/photo-1545921142-325d5ae5f790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
+        { id: 9, name: 'tape10pc', price: 399, image: 'https://images.unsplash.com/photo-1536356915696-c6bf1c01da46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
         { id: 10, name: 'hockeystick', price: 2999, image: 'https://images.unsplash.com/photo-1558087333-5953f5994102?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' }], cart: [] }).write();
     }
 }
