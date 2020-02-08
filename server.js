@@ -1,8 +1,8 @@
+const bodyParser = require('body-parser');
 const express = require('express');
 const lowdb = require('lowdb');
 const app = express();
 const cors = require('cors');
-const bodyParser = require('body-parser');
 const FileSync = require('lowdb/adapters/FileSync');
 const adapter = new FileSync('database.json');
 const database = lowdb(adapter);
@@ -19,20 +19,19 @@ app.use(
 
 // Skapar en databas
 const initiateDatabase = () => {
-    const databaseInitiated = database.has('products').value();
+    const databaseInitiated = database.has('insults').value();
 
     if (!databaseInitiated) {
-        database.defaults({ products: [
-        { id: 1, name: 'cleats', price: 2899, image: 'https://images.unsplash.com/photo-1511426463457-0571e247d816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 2, name: 'shinguards', price: 399, image: 'https://images.unsplash.com/photo-1547447134-cd3f5c716030?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 3, name: 'ball', price: 199, image: 'https://images.unsplash.com/photo-1516567727245-ad8c68f3ec93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 4, name: 'socks', price: 159, image: 'https://images.unsplash.com/photo-1563232490-bf837d8792fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 5, name: 'skates', price: 7999, image: 'https://images.unsplash.com/photo-1501782223170-a04fc18cba9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 6, name: 'goaliegloves', price: 299, image: 'https://images.unsplash.com/photo-1516115928206-880b8c879d22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 7, name: 'helmet',price: 499, image: 'https://images.unsplash.com/photo-1545058803-7138682b521a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 8, name: 'shoulderProtection', price: 1599, image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 9, name: 'tape10pc', price: 399, image: 'https://images.unsplash.com/photo-1536356915696-c6bf1c01da46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' },
-        { id: 10, name: 'hockeystick', price: 2999, image: 'https://images.unsplash.com/photo-1558087333-5953f5994102?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' }], cart: [] }).write();
+        database.defaults({ products: [{ id: 1, name: 'cleats', price: 2899, image: 'https://placeimg.com/640/480/nature' },
+        { id: 2, name: 'skateboard', price: 699, image: 'https://placeimg.com/640/480/nature?t=1580049418291' },
+        { id: 3, name: 'ball', price: 199, image: 'https://placeimg.com/640/480/nature?t=1580049710373' },
+        { id: 4, name: 'shinguards', price: 159, image: 'https://placeimg.com/640/480/nature?t=1580049775596' },
+        { id: 5, name: 'inlines', price: 699, image: 'https://placeimg.com/640/480/nature?t=1580049828979' },
+        { id: 6, name: 'goaliegloves', price: 299, image: 'https://placeimg.com/640/480/nature?t=1580049916144' },
+        { id: 7, name: 'helmet',price: 499, image: 'https://placeimg.com/640/480/nature?t=1580050055633' },
+        { id: 8, name: 'bicycle', price: 3999, image: 'https://placeimg.com/640/480/nature?t=1580050100144' },
+        { id: 9, name: 'spandex', price: 299, image: 'https://placeimg.com/640/480/nature?t=1580050151790' },
+        { id: 10, name: 'hockeystick', price: 2999, image: 'https://placeimg.com/640/480/nature?t=1580050341224' }], cart: [] }).write();
     }
 }
 
@@ -41,7 +40,6 @@ app.get('/', (request, response) => {
 
     const products = database.get('products')
     response.send(products);
-
 });
 
 // Lägger till produkter i varukorgen
