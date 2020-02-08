@@ -9,40 +9,36 @@ const createProductCard = (data) => {
         let img = data[i].image;
 
         // create HTML block for product card
-        let article = document.createElement("article");
+        let productArticle = document.createElement("article");
         let productName = document.createElement("h3");
         let productImg = document.createElement("img");
-        let inforContainer = document.createElement('div');
         let productPrice = document.createElement('p');
-        let button = document.createElement('button');
+        let addButton = document.createElement('button');
 
         // set classes, atrributes and innerHTML to all tags
-        article.className = 'productCard';
+        productArticle.className = 'productCard';
         productName.className = 'productCardName';
         productImg.className = 'productCardImg';
-        inforContainer.className = 'productCardInfo';
         productPrice.className = 'productCardPrice';
-        button.className = 'productCardButton';
+        addButton.className = 'productCardButton';
 
         productImg.setAttribute('src', img);
-        button.setAttribute('value', id);
+        addButton.setAttribute('value', id);
 
         productName.innerHTML = name;
         productPrice.innerHTML = price + ' kr';
-        button.innerHTML = 'Lägg till';
+        addButton.innerHTML = 'Lägg till';
 
         // add all the elements to the page
-        productContainer.appendChild(article);
-
-        article.appendChild(inforContainer);
-        inforContainer.appendChild(productName);
-        inforContainer.appendChild(productImg);
-        inforContainer.appendChild(productPrice);
-        inforContainer.appendChild(button);
+        productContainer.appendChild(productArticle);
+        productArticle.appendChild(productName);
+        productArticle.appendChild(productImg);
+        productArticle.appendChild(productPrice);
+        productArticle.appendChild(addButton);
 
         // add eventlistener to the add to cart button
-        button.addEventListener("click", function() {
-            addProductToCart(this.value);
+        addButton.addEventListener("click", function() {
+            addProductsToCart(this.value);
         });
     }
 }
@@ -59,3 +55,23 @@ const getProducts = () => {
     });
 };
 getProducts();
+
+// Lägger till fotbollsskor
+const products = { 'id': 1 };
+
+const addProductsToCart = () => {
+    fetch('http://localhost:8000/api/cart', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(products),
+    })
+    .then((response) => response.json())
+    .then((products) => {
+        console.log('Tillagd:', products);
+    })
+    .catch((error) => {
+        console.log('Redan tillagd', error);
+    });
+};

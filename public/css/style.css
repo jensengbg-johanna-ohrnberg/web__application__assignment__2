@@ -1,7 +1,108 @@
-.card {
-    border: 1px solid #999;
-            padding: 1rem;
-            box-sizing: content-box;
-            max-width: 200px;
-            position: relative;
+body {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-image: url('https://images.unsplash.com/photo-1537420327992-d6e192287183?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+}
+
+/*produktsidan*/
+.productHeader {
+    border: 2px solid black;
+    background-color: darkgray;
+}
+
+.productTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5rem;
+}
+
+.imgCart {
+    max-width: 5%;
+    height: auto;
+    margin-left: 47%;
+    margin-bottom: 1rem;
+}
+
+.productMain {
+    border: 2px solid black;
+}
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 11.5%;
+}
+
+.productCard {
+    border: 2px solid black;
+    max-width: 15rem;
+    height: 18.5rem;
+    margin: 2rem;
+}
+
+.productCardName {
+    display: flex;
+    justify-content: center;
+}
+
+.productCardImg {
+    max-width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.productCardPrice {
+    display: flex;
+    justify-content: center;
+}
+
+.productCardButton {
+    margin-left: 37%;
+}
+
+/*varukorgsidan*/
+.cartHeader {
+    border: 2px solid black;
+    background-color: darkgray;
+}
+
+.cartTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5rem;
+}
+
+.imgArrow {
+    max-width: 5%;
+    height: auto;
+    margin-left: 47%;
+    margin-bottom: 1rem;
+}
+
+.cartMain {
+    border: 2px solid black;
+}
+
+#cartContainer {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cartPay {
+    border: 2px solid black;
+}
+
+#totalPrice {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#checkoutButton {
+    margin-left: 48.4%;
+    margin-bottom: 1rem;
 }

@@ -7,11 +7,25 @@
         <title>Cart</title>
     </head>
     <body>
-        <header>
-
+        <header class="cartHeader">
+            <h1 class="cartTitle">CART</h1>
+            <a href="shop.html">
+                <img class="imgArrow" src="img/arrow.png" alt="arrow">
+            </a>
         </header>
-        <main>
-            <section id="cart"></section>
+        <main class="cartMain">
+            <section id="cartContainer">
+                <span id="imgHeader"></span>
+                <span id="productHeader">PRODUKT</span>
+                <span id="priceHeader">PRIS</span>
+                <span id="quantityHeader">ANTAL</span>
+            </section>
+            <section id="cartPay">
+                <span id="totalPrice">0 kr</span><br>
+                <button id="checkoutButton">Köp</button>
+            </section>
         </main>
+
+        <script src="js/cart.js"></script>
     </body>
 </html>
