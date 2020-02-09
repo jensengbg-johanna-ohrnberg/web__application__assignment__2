@@ -61,5 +61,24 @@
       "image": "https://placeimg.com/640/480/nature?t=1580050341224"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 3,
+      "name": "Strumpor",
+      "price": 149,
+      "image": "https://placeimg.com/640/480/nature?t=1580049710373"
+    },
+    {
+      "id": 2,
+      "name": "Benskydd",
+      "price": 199,
+      "image": "https://placeimg.com/640/480/nature?t=1580049418291"
+    },
+    {
+      "id": 1,
+      "name": "Fotbollsskor",
+      "price": 2899,
+      "image": "https://placeimg.com/640/480/nature"
+    }
+  ]
 }

@@ -43,7 +43,7 @@ const createProductCard = (data) => {
     }
 }
 
-// hämtar produkterna
+// Hämtar produkterna från databasen
 const getProducts = () => {
     fetch('http://localhost:8000')
     .then((response) => {
@@ -56,10 +56,9 @@ const getProducts = () => {
 };
 getProducts();
 
-// Lägger till fotbollsskor
-const products = { 'id': 1 };
-
-const addProductsToCart = () => {
+// Lägger till produkter i varukorgen
+const addProductsToCart = (id) => {
+    const products = { id: id }
     fetch('http://localhost:8000/api/cart', {
         method: 'POST',
         headers: {
@@ -73,5 +72,6 @@ const addProductsToCart = () => {
     })
     .catch((error) => {
         console.log('Redan tillagd', error);
+        alert('Den här produkten är redan tillagd!')
     });
-};
+}

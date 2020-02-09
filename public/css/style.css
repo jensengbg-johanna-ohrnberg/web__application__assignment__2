@@ -10,13 +10,14 @@ body {
 /*produktsidan*/
 .productHeader {
     border: 2px solid black;
-    background-color: darkgray;
+    background-color: lavenderblush;
 }
 
 .productTitle {
     display: flex;
     justify-content: center;
     margin-top: 5.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .imgCart {
@@ -24,10 +25,6 @@ body {
     height: auto;
     margin-left: 47%;
     margin-bottom: 1rem;
-}
-
-.productMain {
-    border: 2px solid black;
 }
 
 #productContainer {
@@ -41,11 +38,13 @@ body {
     max-width: 15rem;
     height: 18.5rem;
     margin: 2rem;
+    background-color: lavenderblush;
 }
 
 .productCardName {
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .productCardImg {
@@ -57,52 +56,91 @@ body {
 .productCardPrice {
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .productCardButton {
     margin-left: 37%;
+    cursor: pointer;
+    border-radius: .3em;
+    border: 2px solid rgb(97, 187, 240);
+    font-weight: bold;
+    color: lavenderblush;
+    background-color: #56CCF2;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*varukorgsidan*/
 .cartHeader {
     border: 2px solid black;
-    background-color: darkgray;
+    background-color: lavenderblush;
 }
 
 .cartTitle {
     display: flex;
     justify-content: center;
     margin-top: 5.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .imgArrow {
     max-width: 5%;
     height: auto;
-    margin-left: 47%;
+    margin-left: 47.5%;
     margin-bottom: 1rem;
 }
 
-.cartMain {
-    border: 2px solid black;
+#cartPay {
+    background-color: lavenderblush;
+    margin-top: 1rem;
 }
 
 #cartContainer {
-    border: 2px solid black;
     display: flex;
     justify-content: space-evenly;
+    background-color: lavenderblush;
+    margin-top: 1rem;
 }
 
-#cartPay {
-    border: 2px solid black;
+.cartCardName {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cartCardImg {
+    max-width: 10%;
+    height: auto;
+}
+
+.cartCardPrice {
+    font-family: 'Roboto', sans-serif;
+}
+
+.removeCardButton {
+    display: flex;
+    cursor: pointer;
+    border-radius: .3em;
+    border: 2px solid rgb(97, 187, 240);
+    font-weight: bold;
+    color: lavenderblush;
+    background-color: #56CCF2;
+    font-family: 'Roboto', sans-serif;
 }
 
 #totalPrice {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 #checkoutButton {
     margin-left: 48.4%;
     margin-bottom: 1rem;
+    display: flex;
+    cursor: pointer;
+    border-radius: .3em;
+    border: 2px solid rgb(97, 187, 240);
+    font-weight: bold;
+    color: lavenderblush;
+    background-color: #56CCF2;
+    font-family: 'Roboto', sans-serif;
 }
