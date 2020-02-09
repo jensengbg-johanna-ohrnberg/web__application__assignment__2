@@ -2,20 +2,20 @@ const createProductCard = (data) => {
     let productContainer = document.getElementById('productContainer');
 
     for (let i = 0; i < data.length; i++) {
-        // extract values from data
+        // Hämta data
         let id = data[i].id;
         let name = data[i].name;
         let price = data[i].price;
         let img = data[i].image;
 
-        // create HTML block for product card
+        // Skapar element
         let productArticle = document.createElement("article");
         let productName = document.createElement("h3");
         let productImg = document.createElement("img");
         let productPrice = document.createElement('p');
         let addButton = document.createElement('button');
 
-        // set classes, atrributes and innerHTML to all tags
+        // Namnger elementen
         productArticle.className = 'productCard';
         productName.className = 'productCardName';
         productImg.className = 'productCardImg';
@@ -29,14 +29,14 @@ const createProductCard = (data) => {
         productPrice.innerHTML = price + ' kr';
         addButton.innerHTML = 'Lägg till';
 
-        // add all the elements to the page
+        // Lägger till elementen till HTTL sidan
         productContainer.appendChild(productArticle);
         productArticle.appendChild(productName);
         productArticle.appendChild(productImg);
         productArticle.appendChild(productPrice);
         productArticle.appendChild(addButton);
 
-        // add eventlistener to the add to cart button
+        // Lägger till eventlistener på knappen
         addButton.addEventListener("click", function() {
             addProductsToCart(this.value);
         });

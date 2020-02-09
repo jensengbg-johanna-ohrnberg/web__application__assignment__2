@@ -23,16 +23,16 @@ const initiateDatabase = () => {
 
     if (!databaseInitiated) {
         database.defaults({ products: [
-        { id: 1, name: 'Fotbollsskor', price: 2899, image: 'https://placeimg.com/640/480/nature' },
-        { id: 2, name: 'Benskydd', price: 199, image: 'https://placeimg.com/640/480/nature?t=1580049418291' },
-        { id: 3, name: 'Strumpor', price: 149, image: 'https://placeimg.com/640/480/nature?t=1580049710373' },
-        { id: 4, name: 'Målvaktshandskar', price: 299, image: 'https://placeimg.com/640/480/nature?t=1580049775596' },
-        { id: 5, name: 'Strumptejp', price: 99, image: 'https://placeimg.com/640/480/nature?t=1580049828979' },
-        { id: 6, name: 'Skridskor', price: 7999, image: 'https://placeimg.com/640/480/nature?t=1580049916144' },
-        { id: 7, name: 'Hjälm', price: 999, image: 'https://placeimg.com/640/480/nature?t=1580050055633' },
-        { id: 8, name: 'Hockeyklubba', price: 2999, image: 'https://placeimg.com/640/480/nature?t=1580050100144' },
-        { id: 9, name: 'Axelskydd', price: 1499, image: 'https://placeimg.com/640/480/nature?t=1580050151790' },
-        { id: 10, name: 'Armbågsskydd', price: 899, image: 'https://placeimg.com/640/480/nature?t=1580050341224' }], cart: [] }).write();
+        { id: 1, name: 'Fotbollsskor', price: 2899, image: 'https://www.billigastefotbollsskor.com/1212-thickbox_default/nike-fotbollsskor-mercurial-superfly-vi-360-elite-df-fg-cr7-r%C3%B6d-guld.jpg' },
+        { id: 2, name: 'Benskydd', price: 199, image: 'https://www.stadium.se/INTERSHOP/static/WFS/Stadium-SwedenB2C-Site/-/Stadium/sv_SE/Small1x1/265101_106_NIKE_MERCURIAL%20LITE%20GRD.png' },
+        { id: 3, name: 'Strumpor', price: 149, image: 'https://cdn-media.sportamore.se/uploads/products/4056562183954_001_84c4a781d49c481388375b4819f15f7f_jpg_439x356_crop-smart_upscale_q85.jpg' },
+        { id: 4, name: 'Målvaktshandskar', price: 299, image: 'https://cdn.intersport.se/productimages/690x600/144344301000_10.jpg' },
+        { id: 5, name: 'Benskyddstejp', price: 99, image: 'https://www.allinsports.se/pub_images/large/Benskyddstejp-Allinsports_se_863.jpg' },
+        { id: 6, name: 'Skridskor', price: 7999, image: 'https://www.xxl.se/filespin/5b0107f0a2174bab9681bd3ff90ae1e3?resize=544,544&quality=90' },
+        { id: 7, name: 'Hjälm', price: 999, image: 'https://www.xxl.se/filespin/bc817c904be74616b9cc99c36f5934c7?resize=317,317&quality=90&bgcolor=efefef' },
+        { id: 8, name: 'Hockeyklubba', price: 2999, image: 'https://www.hockeytown.se/pub_images/original/1052250.jpg' },
+        { id: 9, name: 'Axelskydd', price: 1499, image: 'https://cdn.mysitoo.com/10033/cache/atn1024_Bauer-supreme-170-axelskydd.jpg?v=1429793030' },
+        { id: 10, name: 'Armbågsskydd', price: 899, image: 'https://www.hockeytown.se/pub_images/large/1053021.jpg' }], cart: [] }).write();
     }
 }
 

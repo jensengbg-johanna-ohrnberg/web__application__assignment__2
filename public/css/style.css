@@ -36,9 +36,9 @@ body {
 .productCard {
     border: 2px solid black;
     max-width: 15rem;
-    height: 18.5rem;
+    height: 22rem;
     margin: 2rem;
-    background-color: lavenderblush;
+    background-color: white;
 }
 
 .productCardName {
