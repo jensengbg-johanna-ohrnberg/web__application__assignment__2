@@ -6,6 +6,7 @@ const getCart = () => {
     let imgHeader = document.getElementById('imgHeader');
     let quantityHeader = document.getElementById('quantityHeader');
     let buttonHeader = document.getElementById('buttonHeader');
+    let totalPrice = document.getElementById('totalPrice');
 
     fetch('http://localhost:8000/api/cart', {
         method: 'GET'
@@ -33,6 +34,7 @@ const getCart = () => {
             cartName.innerText = products.name;
             removeButton.innerHTML = 'Ta bort';
             cartQuantity.innerHTML = 1;
+            totalPrice.innerText = cartPrice * cartQuantity;
 
             cartContainer.appendChild(mainArticle);
             productHeader.appendChild(cartName);
