@@ -73,6 +73,18 @@
       "name": "Fotbollsskor",
       "price": 2899,
       "image": "https://www.billigastefotbollsskor.com/1212-thickbox_default/nike-fotbollsskor-mercurial-superfly-vi-360-elite-df-fg-cr7-r%C3%B6d-guld.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Strumpor",
+      "price": 149,
+      "image": "https://cdn-media.sportamore.se/uploads/products/4056562183954_001_84c4a781d49c481388375b4819f15f7f_jpg_439x356_crop-smart_upscale_q85.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Benskyddstejp",
+      "price": 99,
+      "image": "https://www.allinsports.se/pub_images/large/Benskyddstejp-Allinsports_se_863.jpg"
     }
   ]
 }

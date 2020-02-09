@@ -57,6 +57,6 @@ const removeProductsFromCart = (id) => {
     })
     .then((response) => {
         response.json();
-        console.log(products);
+        console.log('Borttagen', products);
     })
 }
