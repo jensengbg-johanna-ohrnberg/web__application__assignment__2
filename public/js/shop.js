@@ -40,8 +40,8 @@ const createProductCard = (data) => {
         addButton.addEventListener("click", function() {
             addProductsToCart(this.value);
         });
-    }
-}
+    };
+};
 
 // Hämtar produkterna från databasen
 const getProducts = () => {
@@ -74,4 +74,4 @@ const addProductsToCart = (id) => {
         console.log('Redan tillagd', error);
         alert('Den här produkten är redan tillagd!')
     });
-}
+};

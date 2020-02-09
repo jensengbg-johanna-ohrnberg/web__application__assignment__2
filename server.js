@@ -29,7 +29,7 @@ const initiateDatabase = () => {
         { id: 4, name: 'Målvaktshandskar', price: 299, image: 'https://cdn.intersport.se/productimages/690x600/144344301000_10.jpg' },
         { id: 5, name: 'Benskyddstejp', price: 99, image: 'https://www.allinsports.se/pub_images/large/Benskyddstejp-Allinsports_se_863.jpg' },
         { id: 6, name: 'Skridskor', price: 7999, image: 'https://www.xxl.se/filespin/5b0107f0a2174bab9681bd3ff90ae1e3?resize=544,544&quality=90' },
-        { id: 7, name: 'Hjälm', price: 999, image: 'https://www.xxl.se/filespin/bc817c904be74616b9cc99c36f5934c7?resize=317,317&quality=90&bgcolor=efefef' },
+        { id: 7, name: 'Hjälm', price: 999, image: 'https://www.greatskate.se/pub_images/large/bauer-prodigy-youth-hockey-helmet-combo-31_6541.jpg' },
         { id: 8, name: 'Hockeyklubba', price: 2999, image: 'https://www.hockeytown.se/pub_images/original/1052250.jpg' },
         { id: 9, name: 'Axelskydd', price: 1499, image: 'https://cdn.mysitoo.com/10033/cache/atn1024_Bauer-supreme-170-axelskydd.jpg?v=1429793030' },
         { id: 10, name: 'Armbågsskydd', price: 899, image: 'https://www.hockeytown.se/pub_images/large/1053021.jpg' }], cart: [] }).write();
