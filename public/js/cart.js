@@ -26,20 +26,23 @@ const getCart = () => {
             cartPrice.className = 'cartCardPrice';
             removeButton.className = 'removeCardButton';
 
-            cartImg.src = products.img;
+            removeButton.setAttribute('id', products.id);
+
+            cartImg.src = products.image;
             cartPrice.innerText = products.price + ' kr';
             cartName.innerText = products.name;
             removeButton.innerHTML = 'Ta bort';
-            totalPrice.innerText = parseInt(products.price);
 
             cartContainer.appendChild(mainArticle);
-            productHeader.appendChild(cartName);
-            imgHeader.appendChild(cartImg);
-            priceHeader.appendChild(cartPrice);
-            buttonHeader.appendChild(removeButton);
+            cartContainer.appendChild(cartName);
+            cartContainer.appendChild(cartImg);
+            cartContainer.appendChild(cartPrice);
+            cartContainer.appendChild(removeButton);
 
-            removeButton.addEventListener("click", function() {
-                removeProductsFromCart(this.value);
+            removeButton.addEventListener("click", function(event) {
+                const id = event.target.attributes['id'].value;
+                removeProductsFromCart(id);
+                location.reload();
             });
         });
     });
@@ -49,7 +52,7 @@ getCart();
 // Tar bort produkter från varukorgen
 const removeProductsFromCart = (id) => {
     const products = {id: id}
-    let URL = 'http://localhost:8000/api/cart/' + this.id + '';
+    let URL = 'http://localhost:8000/api/cart/' + id;
     fetch(URL, {
         method: 'DELETE',
         headers: {'Content-Type': 'application/json'},

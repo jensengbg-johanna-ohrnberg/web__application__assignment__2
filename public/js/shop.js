@@ -72,6 +72,6 @@ const addProductsToCart = (id) => {
     })
     .catch((error) => {
         console.log('Redan tillagd', error);
-        alert('Den här produkten är redan tillagd!')
+        alert('Den här produkten är redan tillagd!');
     });
 };

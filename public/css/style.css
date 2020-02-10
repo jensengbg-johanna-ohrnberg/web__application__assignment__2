@@ -96,10 +96,15 @@ body {
 }
 
 #cartContainer {
+    max-width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: lavenderblush;
     margin-top: 1rem;
+    margin-left: 18.5rem;
+    padding: 1rem;
 }
 
 .cartCardName {
@@ -107,8 +112,9 @@ body {
 }
 
 .cartCardImg {
-    max-width: 10%;
+    width: 100px;
     height: auto;
+    border-radius: 10px;
 }
 
 .cartCardPrice {
@@ -124,6 +130,10 @@ body {
     color: lavenderblush;
     background-color: #56CCF2;
     font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3em;
+    font-weight: bold;
 }
 
 #totalPrice {
