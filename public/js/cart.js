@@ -1,11 +1,6 @@
 // Hämtar varukorg från databasen
 const getCart = () => {
     let cartContainer = document.getElementById('cartContainer');
-    let productHeader = document.getElementById('productHeader');
-    let priceHeader = document.getElementById('priceHeader');
-    let imgHeader = document.getElementById('imgHeader');
-    let buttonHeader = document.getElementById('buttonHeader');
-    let totalPrice = document.getElementById('totalPrice');
 
     fetch('http://localhost:8000/api/cart', {
         method: 'GET'

@@ -69,10 +69,6 @@ const addProductsToCart = (id) => {
     .then((response) => response.json())
     .then((products) => {
         console.log('Tillagd:', products);
-        let countProducts = products.length;
-        let numbProductsContainer = document.querySelector('.productCardButton');
-
-        numbProductsContainer.innerHTML = countProducts + ' products';
     })
     .catch((error) => {
         console.log('Redan tillagd', error);
