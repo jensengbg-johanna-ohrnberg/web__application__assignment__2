@@ -61,18 +61,5 @@
       "image": "https://www.hockeytown.se/pub_images/large/1053021.jpg"
     }
   ],
-  "cart": [
-    {
-      "id": 2,
-      "name": "Benskydd",
-      "price": 199,
-      "image": "https://www.stadium.se/INTERSHOP/static/WFS/Stadium-SwedenB2C-Site/-/Stadium/sv_SE/Small1x1/265101_106_NIKE_MERCURIAL%20LITE%20GRD.png"
-    },
-    {
-      "id": 5,
-      "name": "Benskyddstejp",
-      "price": 99,
-      "image": "https://www.allinsports.se/pub_images/large/Benskyddstejp-Allinsports_se_863.jpg"
-    }
-  ]
+  "cart": []
 }
